@@ -1,0 +1,14 @@
+# Instalación de node + npm para ejecutar el cliente snyk en local + app web
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+# Instalación de nvm
+nvm install 20
+
+# Verificar que node está instalado
+node -v # debería imprimir `v20.18.0`
+
+# Verifica la versión de npm
+npm -v # debería imprimir `10.8.2`
+
+# IMPORTANTE: Si todo ha ido bien, descarga de librerías, en el directorio del código fuente, app (el que contiene package.json), ejecutar el siguiente comando (puede tardar)
+npm install --save-dev
